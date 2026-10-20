@@ -2,7 +2,7 @@
 library(dplyr)
 source("R/01_clean.R")
 
-sepsis_flag <- ed_clean |>
+sepsis_flag <- ed_clean %>%
   filter(news2 >= 5)
 
 n_flagged   <- nrow(sepsis_flag)

@@ -18,7 +18,7 @@ ed_obs <- tibble(
 )
 
 # Add realistic messiness for the cleaning script to deal with
-ed_obs <- ed_obs |>
+ed_obs <- ed_obs %>%
   mutate(
     age     = pmin(pmax(age, 18), 100),
     lactate = if_else(runif(n) < 0.4, NA_real_, lactate),

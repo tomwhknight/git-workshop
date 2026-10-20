@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 source("R/02_analysis.R")
 
-ed_plot <- ed_clean |>
+ed_plot <- ed_clean %>%
   mutate(flagged = attendance_id %in% sepsis_flag$attendance_id)
 
 p <- ggplot(ed_plot, aes(x = news2, fill = flagged)) +
