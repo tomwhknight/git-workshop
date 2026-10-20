@@ -1,0 +1,16 @@
+{
+  "name": "git-workshop",
+  "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.4",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/rstudio-server": {
+      "singleUser": true
+    }
+  },
+  "postAttachCommand": {
+    "rstudio-server": "rserver --www-port 8787 --server-daemonize 0"
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": { "label": "RStudio", "onAutoForward": "openBrowser" }
+  }
+}
