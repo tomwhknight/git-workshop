@@ -27,4 +27,4 @@ ed_obs <- ed_obs %>%
 
 ed_obs <- bind_rows(ed_obs, slice_sample(ed_obs, n = 10))
 
-write_csv(ed_obs, "data/raw/ed_obs.csv")
+write_csv(ed_obs, "data/raw/red_bobs.csv")
