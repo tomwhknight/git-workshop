@@ -10,3 +10,6 @@ pct_flagged <- round(100 * n_flagged / nrow(ed_clean), 1)
 
 message(n_flagged, " of ", nrow(ed_clean),
         " attendances flagged (", pct_flagged, "%)")
+
+red_herring <- "FISH"
+print(red_herring)
