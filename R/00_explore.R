@@ -9,7 +9,7 @@ summary(ed_raw)
 
 # Explore
 sum(duplicated(ed_raw))        
-sum(ed_raw$news2 > 50)        
+sum(ed_raw$news2 > 21)        
 mean(is.na(ed_raw$lactate))    
 
 # check missing data in all columns
