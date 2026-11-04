@@ -6,8 +6,8 @@ source("R/02_analysis.R")
 ed_plot <- ed_clean %>%
   mutate(flagged = attendance_id %in% sepsis_flag$attendance_id)
 
-p <- ggplot(ed_plot, aes(x = news2, fill = flagged, colour =  )) +
-  geom_bar(color="purple") +
+p <- ggplot(ed_plot, aes(x = news2, fill = flagged)) +
+  geom_bar() +
   labs(
     title = "NEWS2 scores",
     x     = "NEWS2 score",
@@ -17,4 +17,3 @@ p <- ggplot(ed_plot, aes(x = news2, fill = flagged, colour =  )) +
   theme_minimal()
 
 print(p)
-
