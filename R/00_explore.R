@@ -16,9 +16,9 @@ mean(is.na(ed_raw$lactate))
 # check missing data in all columns
 apply(ed_raw, 2, function(x) sum(is.na(x)))
 
-# replace missing lactate values with 0
+# replace missing lactate values with 100
 ed_clean <- ed_raw
-ed_clean$lactate[is.na(ed_clean$lactate) == TRUE] <- 0
+ed_clean$lactate[is.na(ed_clean$lactate) == TRUE] <- 100
 
 # Thresholds
 ed_clean %>% count(news2 >= 5)
