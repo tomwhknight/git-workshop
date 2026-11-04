@@ -6,6 +6,7 @@ ed_raw <- read_csv("data/raw/red_bobs.csv", show_col_types = FALSE)
 glimpse(ed_raw)
 summary(ed_raw)
 #puddle
+#oh no it was a pond
 
 # Explore
 sum(duplicated(ed_raw))        
