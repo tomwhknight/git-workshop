@@ -23,3 +23,5 @@ ed_clean$lactate[is.na(ed_clean$lactate) == TRUE] <- 0
 ed_clean %>% count(news2 >= 5)
 ed_clean %>% count(news2 >= 7)
 ed_clean %>% count(news2 >= 5 | lactate >= 2)
+
+#test_test_test
