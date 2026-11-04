@@ -9,7 +9,7 @@ summary(ed_raw)
 
 # Explore
 sum(duplicated(ed_raw))        
-sum(ed_raw$news2 > 18) # change threshold        
+sum(ed_raw$news2 > 18) # change threshold to 18       
 mean(is.na(ed_raw$lactate))    
 
 # check missing data in all columns
@@ -24,3 +24,4 @@ ed_clean %>% count(news2 >= 5)
 ed_clean %>% count(news2 >= 7)
 ed_clean %>% count(news2 >= 5 | lactate >= 2)
 
+#test_test_test
